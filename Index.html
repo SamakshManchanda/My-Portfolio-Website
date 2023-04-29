@@ -1,34 +1,3 @@
-<!-- Create a simple personal portfolio website that showcases your skills 
-  and experiences. Here are the steps to follow:
-  
-1. Create a new HTML file and use the basic HTML structure to create the layout 
-of your portfolio website.
-
-2. Create a header section for your website. This section should include a title and a 
-navigation menu that links to different sections of your website.
-
-3. Create a "About Me" section where you can write a brief introduction about yourself, 
-your education, your skills, and your interests.
-
-4. Create a "Skills" section where you can list the different skills you have and your 
-proficiency level for each one. You can use a table or a list to display this information.
-
-5. Create an "Experience" section where you can list the different jobs or internships you 
-have had, along with the job title, the company, and the duration of the job. You can also 
-include a brief description of your responsibilities and accomplishments in each job.
-
-6. Create a "Projects" section where you can showcase some of your best projects. You can 
-include screenshots of your projects and a brief description of each project.
-
-7. Finally, add a footer section to your website with your contact information, such as your
-email address, phone number, and social media links.
-
-8. Use CSS to style your website and make it visually appealing. You can use different CSS
-properties like font-size, font-family, color, background-color, padding, margin, border, and 
-text-align to style your HTML elements.
-
- -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -53,7 +22,6 @@ text-align to style your HTML elements.
         left: 0;
         width: 100%;
         height: 3px; /* change the thickness of the border here */
-        background-color: #000; /* change the color of the border here */
       }
       
       h1{
@@ -63,37 +31,24 @@ text-align to style your HTML elements.
       body {
         margin: 0;
         padding: 0;
-        background: #000;
+        background: #444141;
       }
       
-      video {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        transform: translateX(-50%) translateY(-50%);
+      footer {
+        background-color: #fc8d06;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        transition: cubic-bezier();
       }
-      
-      @media (max-width: 1080px) {
-        video {
-          display: none;
-        }
-      }
-      
       
     </style>
   </head>
   <body>
     <div class="video-background">
-      <video autoplay loop muted>
+      <!-- <video autoplay loop muted>
         <source src="glitter-15712.mp4" type="video/mp4">
-        <!-- <source src=".webm" type="video/webm"> -->
-        Your browser does not support the video tag.
-      </video>
+        <source src=".webm" type="video/webm"> -->
     </div>
     
      <h1 class = "bordered-heading">
@@ -111,5 +66,8 @@ text-align to style your HTML elements.
     
 
     </header>
+    <footer>
+      <p>&copy; 2023 Portfolio | Samaksh Manchanda </p>
+    </footer>
   </body>
 </html>
